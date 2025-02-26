@@ -53,5 +53,3 @@ CREATE TABLE order_truck
     CONSTRAINT fk_order_truck_truck FOREIGN KEY (chassis_number) REFERENCES trucks (chassis_number) ON DELETE CASCADE,
     CONSTRAINT fk_order_truck_order FOREIGN KEY (order_number) REFERENCES orders (order_number) ON DELETE CASCADE
 );
-
-
